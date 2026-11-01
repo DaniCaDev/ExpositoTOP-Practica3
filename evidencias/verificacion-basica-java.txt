@@ -1,0 +1,7 @@
+OK: 20 POIs
+OK: 3 vehiculos
+OK: matriz simetrica
+OK: limite temporal del deposito
+OK: normalizacion de texto
+OK: manejo de ruta inexistente sin cerrar la JVM
+RESULTADO: 6 comprobaciones b?sicas satisfactorias

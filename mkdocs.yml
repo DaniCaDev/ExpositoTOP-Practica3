@@ -1,0 +1,61 @@
+site_name: RTVRPTW | ExpositoTOP
+site_description: Portal técnico Docs-as-Code de la Práctica 3
+site_author: Daniel Alejandro Álvarez Casablanca
+repo_name: "GitHub (configurar al publicar)"
+theme:
+  name: material
+  language: es
+  palette:
+    - scheme: default
+      primary: deep purple
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Cambiar a modo oscuro
+    - scheme: slate
+      primary: deep purple
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Cambiar a modo claro
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - content.code.copy
+    - search.suggest
+plugins:
+  - search
+  - mkdoxy:
+      projects:
+        ExpositoTOP:
+          src-dirs: src/main/java
+          full-doc: true
+          doxy-cfg:
+            FILE_PATTERNS: "*.java"
+            RECURSIVE: "YES"
+            OPTIMIZE_OUTPUT_JAVA: "YES"
+            HAVE_DOT: "YES"
+  - with-pdf:
+      author: Daniel Alejandro Álvarez Casablanca
+      copyright: "Práctica 3 | Curso 2026-2027"
+      output_path: pdf/documentacion-tecnica.pdf
+      cover: true
+      back_cover: false
+      toc_title: Índice
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+nav:
+  - Inicio: index.md
+  - Introducción: introduccion.md
+  - Arquitectura: arquitectura.md
+  - Uso y ejecución: manual-usuario.md
+  - Compilación Maven: maven.md
+  - Calidad y SonarQube: calidad.md
+  - Documentación Doxygen: doxygen.md
+  - Decisiones técnicas:
+      - Migración de Ant a Maven: decisiones/adr-001-maven.md
+      - Gestión de errores de lectura: decisiones/adr-002-errores.md

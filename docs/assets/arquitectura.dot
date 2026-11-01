@@ -1,0 +1,12 @@
+digraph arquitectura {
+ graph [bgcolor="transparent", rankdir=LR, pad="0.26", nodesep="0.48", ranksep="0.9", fontname="Helvetica"];
+ node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=12, penwidth=1, color="#D8C5F0", fillcolor="#F4EEFC", fontcolor="#2F2054", margin="0.20,0.13"];
+ edge [color="#8063B1", penwidth=1.6, arrowsize=0.65];
+ Main [label="MainTOPTW\nEjecución"];
+ Reader [label="TOPTWReader\nLectura de instancias"];
+ Model [label="TOPTW\nModelo de datos"];
+ Sol [label="TOPTWSolution\nRutas"];
+ GRASP [label="TOPTWGRASP\nHeurística GRASP"];
+ Inst [label="Instancias\nDatos .txt", fillcolor="#E9F7F2", color="#AFDBC9"];
+ Main -> Reader; Reader -> Inst; Reader -> Model; Model -> Sol; Sol -> GRASP; Main -> GRASP;
+}

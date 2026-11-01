@@ -1,0 +1,4 @@
+Compilación independiente: javac --release 17 -encoding UTF-8
+Resultado: EXITO (11 archivos fuente Java)
+Entorno: OpenJDK 21 en contenedor de verificación, no entorno del estudiante
+Aún pendiente en el Mac: mvn clean verify; SonarQube; Doxygen; MkDocs.

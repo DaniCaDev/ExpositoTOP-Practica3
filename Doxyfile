@@ -1,0 +1,27 @@
+# Práctica 3 - Documentación de código Java
+PROJECT_NAME           = "ExpositoTOP - RTVRPTW"
+PROJECT_BRIEF          = "Recomendador turístico con ventanas de tiempo"
+OUTPUT_DIRECTORY       = .artifacts/doxygen
+INPUT                  = src/main/java
+FILE_PATTERNS          = *.java
+RECURSIVE              = YES
+OPTIMIZE_OUTPUT_JAVA   = YES
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = NO
+EXTRACT_STATIC         = YES
+JAVADOC_AUTOBRIEF      = YES
+WARN_IF_UNDOCUMENTED   = YES
+WARN_LOGFILE           = .artifacts/doxygen-warnings.log
+GENERATE_HTML          = YES
+GENERATE_LATEX         = YES
+HAVE_DOT               = YES
+DOT_IMAGE_FORMAT       = svg
+CLASS_DIAGRAMS         = YES
+UML_LOOK               = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = NO
+DOT_GRAPH_MAX_NODES    = 40
+GENERATE_TREEVIEW      = YES
+HTML_COLORSTYLE        = LIGHT
+USE_MATHJAX            = NO
+QUIET                  = YES
